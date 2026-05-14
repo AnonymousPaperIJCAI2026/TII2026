@@ -1,20 +1,20 @@
 <div align="left"> 
-<h1> 📌 TACO </h1>
-<h3>TACO: Token Calibration with Prompt Anchors for Cross-Domain Zero/Few-Shot Anomaly Detection and Localization</h3>
+<h1> 📌 I-CAST </h1>
+<h3>I-CAST: Industrial Cross-Domain Anomaly Detection via Semantic Anchors and Task-Decoupled Adapter</h3>
 </div>
 
 
-<div align="center"> <img src="figs/fig1.png" width="60%"> </div>
+<div align="center"> <img src="figs/1.png" width="60%"> </div>
 
 <div align="justify">
 
 ## ⭐ Abstract 
-Industrial anomaly detection and localization increasingly rely on large vision--language models (VLMs) for their strong priors and promising zero-shot transfer. However, directly deploying VLMs across unseen industrial domains remains challenging due to (i) semantic inconsistency caused by prompt sensitivity and domain shifts, and (ii) insufficient, task-mismatched local evidence for reliable pixel-level localization. To address these issues, we propose TACO, a parameter-efficient framework that couples prompt anchors with token calibration for zero- and few-shot cross-domain anomaly detection and localization. TACO learns stable normal/ abnormal textual anchors from a prompt ensemble (TWPP), restores anomaly-sensitive local cues via lightweight token adapters with enhanced aggregation (DTA-EA), and performs low-rank cross-modal calibration that injects anchor semantics into visual tokens to reduce representational drift and improve token separability (PTC). The framework further supports few-shot target adaptation by building an inference-time memory bank from a few normal samples. Extensive experiments on diverse 2D benchmarks (VisA, BTAD, DAGM, DTD-Synthetic) and the 3D MVTec-3D dataset demonstrate superior transferability. In zero-shot 2D cross-domain evaluation, TACO establishes a new state-of-the-art with 94.2\% Image-AUROC and 95.8\% AP, surpassing the strongest prior baseline by +1.4\%. For pixel-level localization, it achieves 95.7\% Pixel-AUROC and 87.4\% PRO. Furthermore, our few-shot adaptation on MVTec-3D significantly outperforms existing methods, achieving 81.8\% AUROC in the 1-shot setting---surpassing the previous state-of-the-art by +2.6\%.
+Industrial anomaly detection aims to identify defective patterns across diverse manufacturing scenarios, but its deployment to unseen production domains is severely hindered by the extreme scarcity of defect samples and unpredictable distribution shifts. While vision-language models (VLMs) offer promising zero-shot potential to enable a shared anomaly detection model across diverse industrial scenarios, their application suffers from semantic drift and unreliable localization under domain shifts. To address these challenges, we propose I-CAST, a parameter-efficient adaptation framework for zero- and few-shot cross-domain inspection. I-CAST employs Semantic Anchor Prompt Learning (SAPL) to establish domain-invariant semantic anchors, mitigating domain drift without target-domain retraining. Additionally, a Task-Decoupled Visual Adapter (TDVA) extracts separate task-aware token streams from frozen features, effectively decoupling representations for accurate image-level detection and pixel-level segmentation. An inference-only memory bank further enables few-shot adaptation without parameter updates. Extensive experiments across 13 diverse benchmarks demonstrate that I-CAST achieves state-of-the-art cross-domain transferability in both target-domain zero-shot and few-shot anomaly detection scenarios.
 </div>
 
-📴**Keywords**: Cross-Domain, Zero/Few-Shot, Anomaly Detection and Segmentation, Large Vision Language Model
+📴**Keywords**: Anomaly detection and localization, cross-domain transfer, few-shot learning, industrial inspection, vision-language model, zero-shot learning
 
-<div align="center"> <img src="figs/fig2.png " width="100%"> </div>
+<div align="center"> <img src="figs/2.png " width="100%"> </div>
 
 
 ## 🚀 Get Started
@@ -121,8 +121,8 @@ For example, to test on the Visa , simply run:
 
 
 ## 🖼️ Visualization
-<center><img src="figs/fig3.png "width="70%"></center>
-<center><img src="figs/fig4.png "width="70%"></center>
+<center><img src="figs/3.png "width="70%"></center>
+<center><img src="figs/4.png "width="70%"></center>
 
 
 ## 🙏 Acknowledgement
