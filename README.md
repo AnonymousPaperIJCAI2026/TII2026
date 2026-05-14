@@ -4,7 +4,7 @@
 </div>
 
 
-<div align="center"> <img src="figs/1.png" width="60%"> </div>
+<div align="center"> <img src="figs/fig3.png" width="60%"> </div>
 
 <div align="justify">
 
@@ -14,7 +14,7 @@ Industrial anomaly detection aims to identify defective patterns across diverse 
 
 📴**Keywords**: Anomaly detection and localization, cross-domain transfer, few-shot learning, industrial inspection, vision-language model, zero-shot learning
 
-<div align="center"> <img src="figs/2.png " width="100%"> </div>
+<div align="center"> <img src="figs/fig4.png " width="100%"> </div>
 
 
 ## 🚀 Get Started
@@ -121,8 +121,8 @@ For example, to test on the Visa , simply run:
 
 
 ## 🖼️ Visualization
-<center><img src="figs/3.png "width="70%"></center>
-<center><img src="figs/4.png "width="70%"></center>
+<center><img src="figs/1.png "width="70%"></center>
+<center><img src="figs/2.png "width="70%"></center>
 
 
 ## 🙏 Acknowledgement
